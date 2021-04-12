@@ -4,10 +4,7 @@
 Je suis développeur et en apprentissage dans différents languages, 
 voici ma carte 😊
 
-![Alt text](https://i.imgur.com/4dT0vtj.png)
-
-* * *
-
-![Alt text](https://i.imgur.com/eM5qeRU.png)
+## Languages
+c cplusplus csharp css3 html5 java typescript javascript php python ruby sass
 
 **Learning C-Sharp 🤯**
