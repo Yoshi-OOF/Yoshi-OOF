@@ -14,6 +14,4 @@ https://steamcommunity.com/id/enzo150105/
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=yoshi-oof&show_icons=true&locale=en" alt="yoshi-oof" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=yoshi-oof&" alt="yoshi-oof" /></p>
-
 **Learning C-Sharp 🤯**
