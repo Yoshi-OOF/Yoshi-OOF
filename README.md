@@ -1,7 +1,7 @@
 # 💬 About me
 
 ## **Hi Man!**
-**I'm a young developer of 17 years old and learning different languages 😊**
+**I'm a 18 yo developer and currently learning different languages 😊**
 
 https://g-ca.fr/profil/yoshi
 
