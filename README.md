@@ -12,4 +12,5 @@ https://steamcommunity.com/id/enzo150105/
 
 <p>&nbsp;<img align="left" src="https://github-readme-stats.vercel.app/api?username=yoshi-oof&show_icons=true&bg_color=30,e96443,904e95&title_color=fff&text_color=fff" alt="yoshi-oof" /></p>
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=yoshi-oof&show_icons=true&locale=en&layout=compact&card_width=200" alt="yoshi-oof" /></p>
-![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=yoshi)
+[![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=[yoshi](https://github-readme-stats.vercel.app/api/wakatime?username=Yoshiasti)https://github-readme-stats.vercel.app/api/wakatime?username=Yoshiasti)
+](https://github-readme-stats.vercel.app/api/wakatime?username=Yoshiasti)https://github-readme-stats.vercel.app/api/wakatime?username=Yoshiasti
