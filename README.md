@@ -1,16 +1,35 @@
+<h1 align="center">Welcome to my profile !</h1>
 # 💬 About me
 
-## **Hi Man!**
-**I'm a 18 yo developer and currently learning different languages 😊**
+###
 
-https://g-ca.fr/profil/yoshi
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="40" alt="c logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="cplusplus logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="40" alt="csharp logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" height="40" alt="lua logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" height="40" alt="bash logo"  />
+</div>
 
-https://steamcommunity.com/id/enzo150105/
+###
 
-## Languages
-![Alt text](https://imgur.com/N6yLkOm.png)
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Yoshi-OOF&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Yoshi-OOF&locale=fr&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
+</div>
 
-<p>&nbsp;<img align="left" src="https://github-readme-stats.vercel.app/api?username=yoshi-oof&show_icons=true&bg_color=30,e96443,904e95&title_color=fff&text_color=fff" alt="yoshi-oof" /></p>
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=yoshi-oof&show_icons=true&locale=en&layout=compact&card_width=200" alt="yoshi-oof" /></p>
+###
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app?username=Yoshi-OOF&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false&order=4" height="150" alt="trophy graph"  />
+</div>
+
+###
 
 ![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=Yoshiasti)
