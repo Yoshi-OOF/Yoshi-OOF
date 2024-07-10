@@ -6,7 +6,7 @@
 
 ###
 
-<h4 align="left">📅 19 years old<br>🎓 Bachelor in Computer Science at Laval University<br>🛠️ Actual Project : Yobot, an AI SSL Rocket League Bot<br>🎯 Goal : Mastering C++</h4>
+<h4 align="left">📅 19 years old<br>🎓 Bachelor in Computer Science at Laval University<br>🛠️ Actual Project : Yobot, an AI Rocket League Bot<br>🎯 Goal : Mastering C++</h4>
 
 ###
 
