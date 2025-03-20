@@ -6,7 +6,7 @@
 
 ###
 
-<h4 align="left">📅 19 years old<br>🎓 Bachelor in Computer Science at Laval University<br>🛠️ Actual Project : YoshCPP, an AI Rocket League Bot<br>🎯 Goal : Mastering C++</h4>
+<h4 align="left">📅 20 years old<br>🎓 Bachelor in Computer Science at Laval University<br>🛠️ Actual Project : Monbot, an AI Rocket League Bot<br>🎯 Goal : Mastering C++</h4>
 
 ###
 
