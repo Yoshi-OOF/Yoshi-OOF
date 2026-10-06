@@ -1,0 +1,112 @@
+name: GitHub Profile 3D Contrib
+
+on:
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Generate dark 3D contribution city
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Generate contribution city
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Apply Yoshi dark theme
+        shell: python
+        run: |
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+
+          source = Path("profile-3d-contrib/profile-night-green.svg")
+          target = Path("profile-3d-contrib/profile-yoshi.svg")
+          root = ET.fromstring(source.read_text(encoding="utf-8"))
+          ns = "{http://www.w3.org/2000/svg}"
+
+          # Keep the 3D city as the visual focus and remove only the generic radar.
+          # The language panel stays visible, but the catch-all "other" slice is
+          # removed below so named languages remain readable.
+          for child in list(root):
+              if child.tag == ns + "g" and child.attrib.get("transform") == "translate(980, 284.5)":
+                  root.remove(child)
+
+          # Remove the "other" legend row and donut slice from the language panel.
+          language_panel = next(
+              (
+                  child for child in list(root)
+                  if child.tag == ns + "g"
+                  and child.attrib.get("transform") == "translate(40, 520)"
+              ),
+              None,
+          )
+          if language_panel is not None:
+              for parent in language_panel.iter():
+                  for child in list(parent):
+                      title = child.find(ns + "title")
+                      if (
+                          (child.tag == ns + "text" and (child.text or "").strip().lower() == "other")
+                          or (title is not None and (title.text or "").strip().lower().startswith("other "))
+                      ):
+                          parent.remove(child)
+
+              # Remove the swatch aligned with the old "other" legend row.
+              legend = next(
+                  (
+                      g for g in language_panel.iter(ns + "g")
+                      if g.attrib.get("transform") == "translate(273, 0)"
+                  ),
+                  None,
+              )
+              if legend is not None:
+                  for rect in list(legend.findall(ns + "rect")):
+                      if rect.attrib.get("y") == "151.66666666666666":
+                          legend.remove(rect)
+
+          text = ET.tostring(root, encoding="unicode")
+          colors = {
+              "#eeeeff": "#F0F6FC",
+              "#00000f": "#0D1117",
+              "rgb(255,200,55)": "#7EE787",
+              "#aaaaaa": "#95A2B8",
+              "#47a042": "#5DE4C7",
+              "rgb(68, 68, 68)": "#1B2330",
+              "rgb(57, 57, 57)": "#171E29",
+              "rgb(48, 48, 48)": "#121822",
+              "rgb(27, 125, 40)": "#1F6F5C",
+              "rgb(23, 105, 33)": "#195949",
+              "rgb(19, 88, 28)": "#15483C",
+              "rgb(36, 167, 54)": "#2EA17F",
+              "rgb(30, 140, 45)": "#258267",
+              "rgb(25, 117, 38)": "#1E6954",
+              "rgb(45, 209, 67)": "#5DE4C7",
+              "rgb(38, 175, 56)": "#4AB8A0",
+              "rgb(31, 146, 47)": "#3A927F",
+              "rgb(87, 218, 105)": "#C4B5FD",
+              "rgb(73, 182, 88)": "#9B8FC9",
+              "rgb(61, 153, 74)": "#796FA0",
+          }
+          for old, new in colors.items():
+              text = text.replace(old, new)
+
+          target.write_text(text, encoding="utf-8")
+
+      - name: Commit contribution city
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add profile-3d-contrib/profile-yoshi.svg
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "chore: update dark 3D contribution city"
+            git push
+          fi
